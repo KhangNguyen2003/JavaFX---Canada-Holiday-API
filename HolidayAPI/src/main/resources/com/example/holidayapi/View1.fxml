@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER"
+      prefHeight="435.0"
+      prefWidth="280.0"
+      spacing="20.0"
+      xmlns="http://javafx.com/javafx/17.0.2-ea"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.holidayapi.View1Controller"
+      style="-fx-background-color: linear-gradient(to right, white, red);"
+>
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+  </padding>
+   <Label fx:id="Heading" style="-fx-font-size:25; -fx-underline: true;" text="Holidays In Canada"  />
+   <AnchorPane prefHeight="366.0" prefWidth="240.0">
+      <children>
+         <Label layoutX="82.0" layoutY="24.0" text="Select the Month : " />
+        <Button fx:id="SearchBtn" layoutX="106.0" layoutY="122.0" onAction="#handleSearchButton" text="Search" />
+         <ListView fx:id="ListBox" layoutX="-2.0" layoutY="166.0" onMouseClicked="#handleListItemClicked" prefHeight="200.0" prefWidth="268.0" style="-fx-background-color: rgba(255, 255, 255, 0.8);"/>
+         <ComboBox fx:id="MonthComboBox" layoutX="59.0" layoutY="71.0" prefWidth="150.0" />
+
+      </children>
+   </AnchorPane>
+</VBox>

@@ -1,0 +1,31 @@
+package com.example.holidayapi;
+
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.image.Image;
+import javafx.stage.Stage;
+
+import java.io.IOException;
+import java.util.Objects;
+
+public class HelloApplication extends Application {
+    @Override
+    public void start(Stage stage) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("View1.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 260, 420);
+
+        stage.setTitle("Canada's Holidays API");
+        stage.setResizable(false);
+
+        Image icon = new Image(HelloApplication.class.getResourceAsStream("/com/example/Assets/Canada.png"));
+        stage.getIcons().add(icon);
+
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public static void main(String[] args) {
+        launch();
+    }
+}

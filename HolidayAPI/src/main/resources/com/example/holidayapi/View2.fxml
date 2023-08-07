@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="196.0" prefWidth="594.0" style="-fx-background-color: linear-gradient(to right, white, red);" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.holidayapi.View2Controller">
+   <children>
+      <Button fx:id="ReturnBtn" layoutX="21.0" layoutY="20.0" mnemonicParsing="false" onAction="#Go2View1" text="Return" />
+      <Label fx:id="HolidayName" layoutX="229.0" layoutY="15.0" style="-fx-font-size:25; -fx-underline: true;" text="HolidayName" />
+      <Label layoutX="63.0" layoutY="78.0" text="Date :" />
+      <Label layoutX="63.0" layoutY="149.0" text="Description : " />
+      <Label layoutX="63.0" layoutY="114.0" text="Type :" />
+      <Label fx:id="API_Datetime" layoutX="168.0" layoutY="78.0" text="Date" />
+      <Label fx:id="API_Des" layoutX="168.0" layoutY="149.0" style="-fx-padding: 0 20 0 0" text="Description" />
+      <Label fx:id="API_Type" layoutX="168.0" layoutY="114.0" text="Type" />
+
+   </children>
+</AnchorPane>
